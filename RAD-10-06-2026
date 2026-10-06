@@ -1,0 +1,87 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter your name:");
+        String name = scanner.nextLine();
+
+        System.out.println("Enter your age:");
+        int age = scanner.nextInt();
+        
+        scanner.nextLine(); 
+
+        System.out.println("Enter your address:");
+        String address = scanner.nextLine();
+
+        System.out.println("Enter your weight:");
+        float weight = scanner.nextFloat();
+
+        System.out.println("Enter your height:");
+        double height = scanner.nextDouble();
+
+        System.out.println("Hello, " + name + "! You are" + age + " years old. And you live in " + address + ". Your weight is " + weight + "kg. While your height is " + height + " cm.");
+
+        scanner.close();
+        
+
+
+        
+
+        
+        
+        
+    }
+}
+
+
+import java.util.Scanner;
+
+class Main{
+        public static void main(String[]args){
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter the first value (x):");
+        int x = scanner.nextInt();
+
+        System.out.println("Enter the second value(y):");
+        int y = scanner.nextInt();
+
+        scanner.nextLine();
+
+        System.out.println("Enter an operator (+, -, *, /):"); 
+        String operator = scanner.next(); 
+
+        switch (operator) { 
+            case "+":
+                System.out.println(x + y);
+                break;
+            case "-":
+                System.out.println(x - y);
+                break;
+            case "*":
+                System.out.println(x * y);
+                break;
+            case "/":
+                System.out.println(x / y);
+                break;
+            default:
+                System.out.println("Invalid operator!");
+                break;
+        } 
+        
+        scanner.close();
+   }
+}
+
+
+
+
+
+
+
+       
+
+            
+        
